@@ -26,6 +26,7 @@ const Navbar = () => {
           <nav className="hidden md:flex flex-1 justify-center">
             <ul className="flex space-x-10 text-lg font-medium text-gray-700">
               <li><a href="/" className="hover:text-blue-600 transition-colors">Home</a></li>
+              <li><a href="/about" className="hover:text-blue-600 transition-colors">About</a></li>
               <li><a href="/petcare" className="hover:text-blue-600 transition-colors">Pet Care</a></li>
               <li><a href="/petmedical" className="hover:text-blue-600 transition-colors">Pet Medical</a></li>
               <li><a href="/petaccessories" className="hover:text-blue-600 transition-colors">Pet Accessories</a></li>

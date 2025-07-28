@@ -22,6 +22,7 @@ const Footer = () => {
           <nav>
             <ul className="flex flex-wrap gap-6 text-base">
               <li><a href="/" className="hover:text-blue-400 transition-colors">Home</a></li>
+              <li><a href="/" className="hover:text-blue-400 transition-colors">About</a></li>
               <li><a href="/" className="hover:text-blue-400 transition-colors">Pet Care</a></li>
               <li><a href="/" className="hover:text-blue-400 transition-colors">Pet Medical</a></li>
               <li><a href="/" className="hover:text-blue-400 transition-colors">Pet Accessories</a></li>
