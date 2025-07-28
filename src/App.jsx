@@ -1,6 +1,7 @@
 import './App.css';
 import Footer from './layout/Footer';
 import Navbar from './layout/Navbar';
+// import Landing from './pages/Landing';
 import AppRoutes from './routes/Route';
 
 function App() {
