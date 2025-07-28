@@ -32,6 +32,26 @@ const Navbar = () => {
               <li><a href="/petaccessories" className="hover:text-blue-600 transition-colors">Pet Accessories</a></li>
             </ul>
           </nav>
+
+          {/* Mobile Menu Bar */}
+          {isMenuOpen && (
+            <div className="fixed inset-0 bg-black bg-opacity-40 z-50 flex md:hidden" onClick={() => setIsMenuOpen(false)}>
+              <div className="bg-white w-64 h-full shadow-lg p-6 flex flex-col gap-6" onClick={e => e.stopPropagation()}>
+                <button className="self-end mb-4" onClick={() => setIsMenuOpen(false)}>
+                  <X size={28} />
+                </button>
+                <ul className="flex flex-col gap-6 text-lg font-medium text-gray-700">
+                  <li><a href="/" className="hover:text-blue-600 transition-colors" onClick={() => setIsMenuOpen(false)}>Home</a></li>
+                  <li><a href="/about" className="hover:text-blue-600 transition-colors" onClick={() => setIsMenuOpen(false)}>About</a></li>
+                  <li><a href="/petcare" className="hover:text-blue-600 transition-colors" onClick={() => setIsMenuOpen(false)}>Pet Care</a></li>
+                  <li><a href="/petmedical" className="hover:text-blue-600 transition-colors" onClick={() => setIsMenuOpen(false)}>Pet Medical</a></li>
+                  <li><a href="/petaccessories" className="hover:text-blue-600 transition-colors" onClick={() => setIsMenuOpen(false)}>Pet Accessories</a></li>
+                </ul>
+              </div>
+            </div>
+          )}
+
+        
           {/* Search Bar */}
           <div className="hidden md:flex items-center gap-2 ml-6">
             <div className="relative">
@@ -56,8 +76,11 @@ const Navbar = () => {
                 <line x1="21" y1="21" x2="16.65" y2="16.65" />
               </svg>
             </div>
-            <button className="bg-[#b7a99a] hover:bg-[#b7a99a] text-white px-4 py-2 rounded-md font-semibold shadow transition-colors duration-200">Search</button>
           </div>
+          <button className="bg-[#b7a99a] hover:bg-[#b7a99a] text-white px-4 py-2 rounded-md font-semibold shadow transition-colors duration-200">Search</button>
+              <button className='md:hidden' onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            {isMenuOpen ? <X /> : <Menu />}
+          </button>
         </div>
       </div>
     </header>
