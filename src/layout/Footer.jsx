@@ -7,7 +7,7 @@ const Footer = () => {
         {/* Logo and description */}
         <div className="flex flex-col items-center md:items-start gap-2">
           <div className="flex items-center gap-2">
-            <span className="text-xl font-bold text-blue-400">Pet Shop</span>
+            <span className="text-xl font-bold text-white">Pet Shop</span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 text-yellow-400">
               <circle cx="6.5" cy="8.5" r="2.5" />
               <circle cx="17.5" cy="8.5" r="2.5" />

@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center gap-2 select-none">
-            <span className="text-3xl font-extrabold text-blue-600 tracking-wide drop-shadow-sm">Pet Shop</span>
+            <span className="text-3xl font-extrabold bg-white tracking-wide drop-shadow-sm">Pet Shop</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -55,7 +55,7 @@ const Navbar = () => {
                 <line x1="21" y1="21" x2="16.65" y2="16.65" />
               </svg>
             </div>
-            <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md font-semibold shadow transition-colors duration-200">Search</button>
+            <button className="bg-[#b7a99a] hover:bg-[#b7a99a] text-white px-4 py-2 rounded-md font-semibold shadow transition-colors duration-200">Search</button>
           </div>
         </div>
       </div>

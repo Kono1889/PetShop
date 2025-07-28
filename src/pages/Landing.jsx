@@ -5,7 +5,7 @@ const Landing = () => {
   return (
     <section className="relative min-h-[70vh] bg-[#f8f3ef] flex items-center justify-center overflow-hidden">
       {/* Left Cat Image */}
-      <div className="hidden md:block absolute left-0 bottom-0 h-full w-1/3 flex items-end z-10">
+      <div className="md:block absolute left-0 bottom-0 h-full w-1/3 flex items-end z-10">
         <div className="bg-[#d6cfc7] rounded-tr-[80px] rounded-br-[80px] h-[80%] w-[90%] flex items-end justify-center overflow-hidden shadow-lg">
           <img
             src={photo2}
@@ -16,7 +16,7 @@ const Landing = () => {
         </div>
       </div>
       {/* Right Dog Image */}
-      <div className="hidden md:block absolute right-0 top-0 h-full w-1/3 flex items-start z-10">
+      <div className="md:block absolute right-0 top-0 h-full w-1/3 flex items-start z-10">
         <div className="bg-[#b7a99a] rounded-tl-[80px] rounded-bl-[80px] h-[80%] w-[90%] flex items-start justify-center overflow-hidden shadow-lg">
           <img
             src={photo1}
